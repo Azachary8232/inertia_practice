@@ -14,11 +14,12 @@ use Inertia\Inertia;
 |
 */
 
-
+// standard Laravel route works
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
+// Inertia Route; route is read but doesn't render page
 Route::get('/', function () {
     return Inertia::render('Home');
 });
